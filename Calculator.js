@@ -1,4 +1,4 @@
-Calculator
+//Calculator
 // math functions to write out
 //add
 function add (a,b) {
@@ -23,6 +23,9 @@ function operate(){
     //and then calls one of the functions on the numbers
 }
 
+calc = [
+    {name: }
+]
 //function to capture number 'a' from 
 //inputs on screen buttons
 
