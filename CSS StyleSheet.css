@@ -1,58 +1,85 @@
-* {
-    box-sizing: border-box;
+
+body {
+    background: linear-gradient(#28F061, #6128F0) ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;    
 }
-.body {
-    background: #f6f6f6;
-    padding-bottom: 50px;
-    padding-top: 30px;
-}
-.calculator {
-    max-width: 400px;
+#content-wrapper {
+    width: 20rem;
     margin: 0 auto;
-    border: 2px solid #111;
-    border-radius: 5px;
+    margin-top: 2rem;
 }
 
-.calculator input {
-    background: none;
-    background-color: aliceblue;
-    border: 1px;
+#display {
+    height: 3.5rem;
+    background-color: white;
     box-shadow: none;
-    width: 100%;
-    border bottom: 2px solid #111;
-    padding: 20px;
+    padding-top: .5rem;
+    padding-bottom: 0.2rem;
+    border: #6128F0 solid 0.7rem;
     text-align: right;
-    font-size: 40 px;
+    font-size: 2.5 rem;
+    overflow: hidden;
+}
+#display-text {
+    background-color: white;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 40px;
+
 }
 
-.calculator-buttons{
-/* css grid*/
-padding: 20px;
+#keys {
+    
+    font-size: 1.7 rem;
+    text-align: center;
+    vertical-align: middle;
+    
+}
 
-display: grid;
+table {
+    background:linear-gradient(#28B7F0, #F06128)  ;
+    width: 20rem;
+    border-spacing: 0.3rem;
+    border: rgb(70, 70, 70) solid 0.15rem;
+    padding: 0.2em;
+}
 
-grid-template: repeat(5, 1fr) / repeat(4, 1fr);
-grid-gap: 15px;
+table td {
+    width: 3.7rem;
+    height: 3rem;
+    padding: 0.1rem;
+    border: 0.1rem solid grey;
+    border-radius: 3rem;
+    background-color: rgb(245, 245, 245);
+    color: rgb(30, 30, 30);
 }
 .calc-button {
 background: rgba(0,0,0,.5);
 border: 1px solid #111;
 padding: 20px;
-color: #eee;
+color: rgb(238, 211, 8);
 border-radius: 5px;
 font-size: 22px;
 cursor: pointer;
 }
 
-.is-clear,
-.is-zero {
+.is-clear {
     grid-column: span 3;
+    color: #eee;
+}
+.is-zero {
+    grid-column: span 2;
 }
 
 .is-clear {
-background: #357208;
+background: rgb(251, 170, 89);
 }
 
 .is-equals {
-background: #28D060;
+background: #28cbf0;
+color: #eee;
 }
