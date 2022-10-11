@@ -20,7 +20,7 @@ document.getElementById('/').addEventListener('click', input);
 document.getElementById('.').addEventListener('click', input);
 
 
-//Equals fires the calculate function
+//Equals fires the operate function
 document.getElementById('=').addEventListener('click', operate);
 
 //AC fires the reset function
@@ -35,7 +35,7 @@ displayCurrent += inputValue;
 display.innerText = displayCurrent;
 }
 function operate() {
-display.innerTExt = eval(displayCurrent);
+display.innerText = eval(displayCurrent);
 displayCurrent = eval(displayCurrent).toString();
 }
 
