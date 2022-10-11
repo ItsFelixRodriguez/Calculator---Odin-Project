@@ -1,31 +1,48 @@
 
+h1{
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+p {
+    margin-top: 20px;
+    display: flexbox;
+    flex-direction: column;
+    text-align: center;
+    color: whitesmoke;
+}
 body {
-    background: linear-gradient(#28F061, #6128F0) ;
+    background: rgba(74, 92, 194, 0.812) ;
     font-family: Arial, Helvetica, sans-serif;
     background-repeat: no-repeat;
     background-attachment: fixed;
     height: 100%;
     margin: 0;    
+    cursor: pointer;
 }
 #content-wrapper {
     width: 20rem;
     margin: 0 auto;
     margin-top: 2rem;
+    box-shadow: 5px 5px 12px rgba(0,0,0,0.5);
 }
 
 #display {
     height: 3.5rem;
-    background-color: white;
+    background-color: #212121;
     box-shadow: none;
     padding-top: .5rem;
     padding-bottom: 0.2rem;
-    border: #6128F0 solid 0.7rem;
+    border: black solid 0.7rem;
     text-align: right;
     font-size: 2.5 rem;
     overflow: hidden;
+    color: #60A07F
 }
 #display-text {
-    background-color: white;
+    background-color: ;
     margin-left: 1rem;
     margin-right: 1rem;
     font-size: 40px;
@@ -33,15 +50,21 @@ body {
 }
 
 #keys {
-    
     font-size: 1.7 rem;
     text-align: center;
     vertical-align: middle;
     
 }
+.func:hover {
+    transform: scale(1.1);
+}
+#AC {
+    background-color: rgb(251, 170, 89);
+    }
+
 
 table {
-    background:linear-gradient(#28B7F0, #F06128)  ;
+    background:black  ;
     width: 20rem;
     border-spacing: 0.3rem;
     border: rgb(70, 70, 70) solid 0.15rem;
@@ -57,29 +80,27 @@ table td {
     background-color: rgb(245, 245, 245);
     color: rgb(30, 30, 30);
 }
-.calc-button {
-background: rgba(0,0,0,.5);
-border: 1px solid #111;
-padding: 20px;
-color: rgb(238, 211, 8);
-border-radius: 5px;
-font-size: 22px;
-cursor: pointer;
+.num:hover {
+    transform: scale(1.08);
 }
 
-.is-clear {
-    grid-column: span 3;
-    color: #eee;
+.func {
+    background-color:#1be79c ;
 }
-.is-zero {
-    grid-column: span 2;
+.zero {
+background-color: #FB19DB;
 }
-
-.is-clear {
-background: rgb(251, 170, 89);
+.zero:hover {
+    transform: scale(1.1);
 }
 
-.is-equals {
-background: #28cbf0;
+.equals {
+background: rgba(74, 92, 194, 0.812);
 color: #eee;
+}
+#AC:hover {
+    transform: scale(1.05);
+}
+.equals:hover {
+    transform: scale(1.1);
 }
